@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>UNIFORM</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- progress barstle -->
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+<style>.call_to-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.call_to-btn span {
+  margin-right: 10px;
+}
+
+.modal-body img {
+  border-radius: 8px;
+}
+
+.modal-body h6 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.modal-body p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.card-first {
+      position: relative;
+      overflow: hidden;
+      height: 350px;
+      /* Custom height for each card */
+    }
+
+    /* comment1 */
+    /* .card-first {
+      height: 350px;  
+       background-color: rgb(135, 100, 175);
+      text-align:center; 
+    }  */
+
+    /* Set custom height and width for card images */
+    .card-img-top {
+      /* Make the image take up the full width of the card */
+      transition: all 0.3s ease;
+      height: 350px;
+      width: 100%;
+      object-fit: 100%;
+      /* Ensures the image covers the area without distortion */
+    }
+
+
+
+
+    .card-first:hover .card-img-top {
+      filter: blur(5px);
+      /* Apply blur on hover */
+      opacity: 0.7;
+      /* Optional: dim the image a bit */
+    }
+
+    /* Position text on top of the image */
+    .description {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(165, 215, 228, 0.5);
+      /* Semi-transparent background */
+      color: rgb(80, 8, 76);
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: opacity 0.2s ease;
+    }
+
+    /* Show the text when hovering over the card */
+    .card-first:hover .description {
+      opacity: 1;
+    }
+
+
+
+    .roundcard {
+      background-color: #e4bee6;
+      border-radius: .7rem;
+    }
+
+    .description {
+      display: none;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Show the card description on hover of the card */
+    .card:hover .description {
+      /* height: 150px;   */
+      width: 100%;
+      /* background-color: rgb(135, 100, 175); */
+      text-align: center;
+      display: block;
+      opacity: 8;
+    }
+    .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .wrapper .box {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+        /* Reset styles for container */
+    
+    .box {
+            width: 220px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect */
+        .box:hover {
+            transform: scale(1.1);
+            /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+        }
+
+        footer {
+      /* background-color: #333; */
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      /* color: #f4b41a; */
+    }
+
+    .footer-section p,
+    .footer-section a {
+      margin: 5px 0;
+      font-size: 0.9rem;
+      color: #ddd;
+      text-decoration: none;
+    }
+
+ 
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      /* color: #f4b41a; */
+    }
+
+    .social-links a:hover {
+      color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-section {
+        text-align: center;
+      }
+    }
+</style>
+
+</head>
+
+<body>
+  <div class="top_container">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              Uniform
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#aboutus"> About us </a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="contact.html"> Contact us </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href=""> Feedback </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">Product</a>
+                </li>
+
+               
+
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero_section ">
+      <div class="hero-container container">
+        <div class="hero_detail-box">
+          <h3>
+            Welcome to <br>
+            Best 
+          </h3>
+          <h1>
+            UNIFORMS
+          </h1>
+          <p>
+            To redefine the standard of uniforms by delivering personalized, high-quality solutions that make every wearer feel confident and professional.
+          </p>
+          <div class="hero_btn-continer">
+            <a href="" class="call_to-btn btn_white-border">
+              <span>
+                Contact
+              </span>
+              <img src="images/right-arrow.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="hero_img-container">
+          <div>
+            <img src="images/hero.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end header section -->
+
+  <!-- about section -->
+  <section id="aboutus" class="about_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading ">
+        About Us & Our Services
+      </h2>
+      <p class="text-center">
+        We are dedicated to redefining the way uniforms represent professionalism, style, and comfort. With years of expertise in crafting high-quality uniforms, we take pride in being a trusted partner for businesses, schools, healthcare providers, and industries seeking exceptional attire solutions.
+      </p>
+      <p class="text-center">
+        click the read more button for the services we are providing   
+        
+            </p>
+      <div class="about_img-box ">
+        <img src="images/11111-removebg-preview.png" alt="" class="img-fluid w-100">
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+      
+
+      
+        <div>  <a href="#" class="call_to-btn" data-bs-toggle="modal" data-bs-target="#servicesModal">
+          <span>
+            Read More
+          </span>
+          <img src="images/right-arrow.png" alt="">
+        </a></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="servicesModalLabel">Our Services</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/010/067/850/small/cute-school-children-cartoon-waving-hands-vector.jpg" alt="Services Image" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+              <h6>Tailored Uniform Solutions</h6>
+              <p>Professional uniforms crafted to meet your specific needs and align with your brand identity.</p>
+              <h6>Customized Stitching</h6>
+              <p>Personalized designs and precise measurements for the perfect fit and unique style.</p>
+              <h6>Quality Fabrics</h6>
+              <p>Premium materials ensuring comfort, durability, and a professional appearance.</p>
+              <h6>Wide Range of Options</h6>
+              <p>Uniforms for businesses, schools, healthcare providers, and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- about section -->
+
+  <!-- teacher section -->
+  <section class="teacher_section layout_padding-bottom">
+    <h2 class="main-heading ">
+ Collections
+    </h2>
+  <div class="container py-5">
+    <!-- Carousel Wrapper -->
+    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="data:image/jpeg;base64,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" class="card-img-top imgstyling" alt="Card image">
+                <div class="card-body description">
+                  <h5 class="card-title">Fork Style </h5>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col">
+                <div class="card">
+                    <img src="abbaya img.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  </div> -->
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="https://img.freepik.com/free-vector/denim-pants-cartoon-sticker_1308-81792.jpg" class="card-img-top imgstyling" alt="Card image">
+                <div class="card-body description">
+                  <h5 class="card-title">Boys pants</h5>
+
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="https://img.freepik.com/free-vector/sticker-white-shirt-with-blue-sleeves_1308-85473.jpg?semt=ais_hybrid" class="card-img-top" alt="Card image" >
+                <div class="card-body description">
+                  <h5 class="card-title">Boys Shirts</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="https://uniformsolutions.co.in/wp-content/uploads/2020/09/product1395.png" class="card-img-top" alt="Card image">
+                <div class="card-body description">
+                  <h5 class="card-title  ">socks Collection</h5>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Card 5 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeN-UuDdmOakD1NraQ_6EyVHshLrMsNkHM4A&s" class="card-img-top" alt="Card image">
+                <div class="card-body description">
+                  <h5 class="card-title ">Tie Collection</h5>
+
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="https://www.pngitem.com/pimgs/m/31-312447_formal-uniform-girl-school-uniform-clipart-hd-png.png" class="card-img-top" alt="Card image">
+                <div class="card-body description">
+                  <h5 class="card-title ">Girls Collection</h5>
+                  <!-- <p class="card-text">This is a description for Card 6.</p> -->
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXo9VePmYcdZy1x_peXuPgUKRLjlFjf-yvow&s" class="card-img-top" alt="Card image">
+                <div class="card-body description">
+                  <h5 class="card-title">Sweaters</h5>
+              
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col">
+              <div class="card card-first">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr-sEhJsTCDb8CyW4lQJXCeiFacNpvq6J_Fg&s" class="card-img-top" alt="Card image">
+                <div class="card-body description">
+                  <h5 class="card-title">Shoes Collection</h5>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" style="color: black;">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"  style="color: black;">Next</span>
+      </button>
+    </div>
+  </div>
+  </section>
+
+  <!-- teacher section -->
+
+  <!-- vehicle section -->
+  <!-- <section class="vehicle_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading ">
+        Vehicles Facility
+      </h2>
+      <p class="text-center">
+        There are many variations of passages of Lorem Ipsum available, but the majority hThere are many variations of
+        passages of Lorem Ipsum available, but the majority h
+      </p>
+      <div class="layout_padding-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="vehicle_img-box ">
+                <img src="images/bus.png" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="vehicle_img-box ">
+                <img src="images/bus.png" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="vehicle_img-box ">
+                <img src="images/bus.png" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+
+  <!-- vehicle section -->
+
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <h2 class="main-heading">OUR CLIENTS</h2>
+      <p class="text-center">
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      </p>
+  
+      <div class="wrapper">
+        <div class="box" style="background-image: url('1.jpg');"></div>
+        <div class="box" style="background-image: url('download\\ (1).jfif');"></div>
+        <div class="box" style="background-image: url('download.jfif');"></div>
+        <div class="box" style="background-image: url('3.jfif');"></div>
+        <div class="box" style="background-image: url('4.jfif');"></div>
+        <div class="box" style="background-image: url('5.jpeg');"></div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    .wrapper .box {
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+  </style>
+  
+  
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading ">
+        Our Students Feedback
+      </h2>
+      <p class="text-center">
+        There are many variations of passages of Lorem Ipsum available, but the majority hThere are many variations of
+        passages of Lorem Ipsum available, but the majority h
+      </p>
+      <div class="layout_padding2">
+        <div class="client_container d-flex flex-column">
+          <div class="client_detail d-flex align-items-center">
+            <div class="client_img-box ">
+              <img src="images/student.png" alt="">
+            </div>
+            <div class="client_detail-box">
+              <h4>
+                Veniam Quis
+              </h4>
+              <span>
+                (exercitation)
+              </span>
+            </div>
+          </div>
+          <div class="client_text mt-4">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum."
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+
+      <h2 class="main-heading">
+        Contact Now
+
+      </h2>
+      <p class="text-center">
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+
+      </p>
+      <div class="">
+        <div class="contact_section-container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="contact-form">
+                <form action="">
+                  <div>
+                    <input type="text" placeholder="Name">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Phone Number">
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Message" class="input_message">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn_on-hover">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- end contact section -->
+
+ 
+
+
+
+
+
+
+  <!-- admission section -->
+
+
+ 
+
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <footer>
+      <div class="footer-container">
+        <!-- Location Section -->
+        <div class="footer-section">
+          <h4>Our Location</h4>
+          <p>123 Bakery Street</p>
+          <p>Cityville, CA 12345</p>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Email: <a href="mailto:info@bakery.com">info@bakery.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </div>
+  
+        <!-- Social Links Section -->
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank">&#xf09a; Facebook</a>
+            <a href="https://twitter.com" target="_blank">&#xf099; Twitter</a>
+            <a href="https://instagram.com" target="_blank">&#xf16d; Instagram</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+    // Australia.
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: {
+          lat: 40.645037,
+          lng: -73.880224
+        },
+      });
+
+      var image = 'images/maps-and-flags.png';
+      var beachMarker = new google.maps.Marker({
+        position: {
+          lat: 40.645037,
+          lng: -73.880224
+        },
+        map: map,
+        icon: image
+      });
+    }
+  </script>
+  <!-- google map js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+  </script>
+  <!-- end google map js -->
+</body>
+
+</html>
